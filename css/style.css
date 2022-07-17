@@ -2,6 +2,7 @@ body {
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 * {
@@ -9,11 +10,11 @@ body {
 }
 
 .content {
+  max-width: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  height: 100vh;
-  width: 1200px;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .container {
@@ -21,9 +22,11 @@ body {
   border: 0 solid #fff;
   padding: 30px 20px;
   box-sizing: border-box;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -50,6 +53,7 @@ body {
 .buttons {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 20px;
 }
