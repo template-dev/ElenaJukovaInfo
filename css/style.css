@@ -12,9 +12,18 @@ body {
 .content {
   max-width: 100%;
   min-height: 95vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
   border: 0 solid #dcdcdc;
   box-sizing: border-box;
@@ -26,9 +35,17 @@ body {
   padding: 30px 20px;
   box-sizing: border-box;
   max-width: 1200px;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -55,16 +72,28 @@ body {
 
 .buttons {
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
   justify-content: space-around;
   padding-top: 20px;
 }
 
 .buttons a {
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
-  justify-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
   text-decoration: none;
   color: #fff;
   padding: 15px 20px;
@@ -85,8 +114,14 @@ body {
 .copyright {
   text-align: center;
   color: #dcdcdc;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
   align-items: flex-end;
   border: 0 solid red;
   width: 100%;
