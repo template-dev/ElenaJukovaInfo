@@ -13,8 +13,11 @@ body {
   max-width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 0 solid #dcdcdc;
+  box-sizing: border-box;
 }
 
 .container {
@@ -77,4 +80,15 @@ body {
 
 .buttons a img {
   margin-left: 10px;
+}
+
+.copyright {
+  text-align: center;
+  color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 0 solid red;
+  width: 100%;
+  margin-top: -30px;
 }
