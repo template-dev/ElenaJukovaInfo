@@ -48,6 +48,8 @@ body {
   -ms-justify-content: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn;
+  animation-duration: 3s;
 }
 
 .ej_logo {
@@ -57,6 +59,8 @@ body {
 
 .info {
   text-align: center;
+  animation: pulse;
+  animation-duration: 4s;
 }
 
 .info h1 {
@@ -107,7 +111,7 @@ body {
   border: 2px solid #ff52b4;
 }
 
-.buttons a img {
+.buttons a i {
   margin-left: 10px;
 }
 
@@ -126,6 +130,24 @@ body {
   border: 0 solid red;
   width: 100%;
   padding: 10px 0;
+  animation: bounceInUp;
+  animation-duration: 3s;
+}
+
+.buttons a:first-child {
+  animation: bounceInLeft;
+  animation-duration: 1s;
+}
+
+.buttons a:last-child {
+  animation: bounceInRight;
+  animation-duration: 1s;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 378px) {
